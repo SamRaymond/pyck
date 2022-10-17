@@ -103,7 +103,7 @@ else ()
   else()
     set(CPACK_GENERATOR "DEB")
     set(CPACK_SOURCE_GENERATOR "TGZ")
-    set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Bruce Jones") #required
+    set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Sam Raymond") #required
   endif()
 endif ()
 
@@ -111,6 +111,6 @@ endif ()
 install(FILES ${CMAKE_BINARY_DIR}/swig/pyck.py DESTINATION ${INSTALL_DEST})
 install(FILES ${ZLIB_LIBRARY_RELEASE} DESTINATION ${INSTALL_DEST})
 
-add_subdirectory(swig)
+# add_subdirectory(swig)
 
 include(CPack)

@@ -33,4 +33,5 @@ jobs:
            ls
            make -j
            ls
+           cd swig/
            cpack .

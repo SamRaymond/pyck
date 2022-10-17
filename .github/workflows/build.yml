@@ -30,6 +30,5 @@ jobs:
       run: |
            cd ./build/
            cmake ../
-           make
-           cd ./swig
+           make -j
            cpack .

@@ -108,9 +108,9 @@ else ()
 endif ()
 
 # INSTALL(TARGETS ${SWIG_MODULE_swig_test_REAL_NAME} DESTINATION test)
-install(FILES ${CMAKE_BINARY_DIR}/pyck.py DESTINATION ${INSTALL_DEST})
+install(FILES ${CMAKE_BINARY_DIR}/swig/pyck.py DESTINATION ${INSTALL_DEST})
 install(FILES ${ZLIB_LIBRARY_RELEASE} DESTINATION ${INSTALL_DEST})
 
-# add_subdirectory(swig)
+add_subdirectory(swig)
 
 include(CPack)
